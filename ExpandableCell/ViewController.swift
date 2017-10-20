@@ -37,12 +37,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             expandedCell = nil
             return
         }
-        let cell = ExpandedCellInfo(for: indexPath) { () -> (UITableViewCell) in
+        let cellClosure: CellClosure = { (IndexPath) -> (UITableViewCell) in
             let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "q")
             cell.textLabel?.text = "expanded"
             cell.detailTextLabel?.text = "\(indexPath.row)"
             return cell
         }
+        let cell = ExpandedCellInfo(for: indexPath, cellType: .custom(cellClosure))
         expandedCell = cell
         expandableTable.expandCell(cell)
     }
