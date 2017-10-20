@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AZExpandable
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -36,7 +37,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             expandedCell = nil
             return
         }
-        let cell = ExpandedCellInfo(indexPath: indexPath) { () -> (UITableViewCell) in
+        let cell = ExpandedCellInfo(for: indexPath) { () -> (UITableViewCell) in
             let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "q")
             cell.textLabel?.text = "expanded"
             cell.detailTextLabel?.text = "\(indexPath.row)"

@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		544BBBECEC7CBA6DC12582BA /* Pods_ExpandableCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAEC0521AA1804F5AD4A219 /* Pods_ExpandableCell.framework */; };
 		579732361F971A43006DB071 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579732351F971A43006DB071 /* AppDelegate.swift */; };
 		579732381F971A43006DB071 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579732371F971A43006DB071 /* ViewController.swift */; };
 		5797323B1F971A43006DB071 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579732391F971A43006DB071 /* Main.storyboard */; };
 		5797323D1F971A43006DB071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5797323C1F971A43006DB071 /* Assets.xcassets */; };
 		579732401F971A43006DB071 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5797323E1F971A43006DB071 /* LaunchScreen.storyboard */; };
-		5797324A1F971A72006DB071 /* ExpandableProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 579732491F971A72006DB071 /* ExpandableProxy.m */; };
-		5797324C1F972856006DB071 /* ExpandableTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5797324B1F972856006DB071 /* ExpandableTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +23,9 @@
 		5797323C1F971A43006DB071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5797323F1F971A43006DB071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		579732411F971A43006DB071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		579732471F971A72006DB071 /* ExpandableCell-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExpandableCell-Bridging-Header.h"; sourceTree = "<group>"; };
-		579732481F971A72006DB071 /* ExpandableProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpandableProxy.h; sourceTree = "<group>"; };
-		579732491F971A72006DB071 /* ExpandableProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpandableProxy.m; sourceTree = "<group>"; };
-		5797324B1F972856006DB071 /* ExpandableTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTable.swift; sourceTree = "<group>"; };
+		5B9DB0A27CB6D3B14B4FA504 /* Pods-ExpandableCell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpandableCell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExpandableCell/Pods-ExpandableCell.debug.xcconfig"; sourceTree = "<group>"; };
+		8A984765D95495A0BB3DFE38 /* Pods-ExpandableCell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpandableCell.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExpandableCell/Pods-ExpandableCell.release.xcconfig"; sourceTree = "<group>"; };
+		9CAEC0521AA1804F5AD4A219 /* Pods_ExpandableCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpandableCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				544BBBECEC7CBA6DC12582BA /* Pods_ExpandableCell.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FDE01C8E17946A046C6AC32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CAEC0521AA1804F5AD4A219 /* Pods_ExpandableCell.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CD19F1321C5BD94F03DDF41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B9DB0A27CB6D3B14B4FA504 /* Pods-ExpandableCell.debug.xcconfig */,
+				8A984765D95495A0BB3DFE38 /* Pods-ExpandableCell.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		579732291F971A43006DB071 = {
 			isa = PBXGroup;
 			children = (
 				579732341F971A43006DB071 /* ExpandableCell */,
 				579732331F971A43006DB071 /* Products */,
+				2CD19F1321C5BD94F03DDF41 /* Pods */,
+				0FDE01C8E17946A046C6AC32 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,10 +84,6 @@
 				5797323C1F971A43006DB071 /* Assets.xcassets */,
 				5797323E1F971A43006DB071 /* LaunchScreen.storyboard */,
 				579732411F971A43006DB071 /* Info.plist */,
-				579732481F971A72006DB071 /* ExpandableProxy.h */,
-				579732491F971A72006DB071 /* ExpandableProxy.m */,
-				579732471F971A72006DB071 /* ExpandableCell-Bridging-Header.h */,
-				5797324B1F972856006DB071 /* ExpandableTable.swift */,
 			);
 			path = ExpandableCell;
 			sourceTree = "<group>";
@@ -81,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 579732441F971A43006DB071 /* Build configuration list for PBXNativeTarget "ExpandableCell" */;
 			buildPhases = (
+				3B9DABDA8FCD5AA9B2C3ADF1 /* [CP] Check Pods Manifest.lock */,
 				5797322E1F971A43006DB071 /* Sources */,
 				5797322F1F971A43006DB071 /* Frameworks */,
 				579732301F971A43006DB071 /* Resources */,
+				C68FC4EE3E073A697ABC5066 /* [CP] Embed Pods Frameworks */,
+				FF4A0E380D52A064EC148C88 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,15 +159,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B9DABDA8FCD5AA9B2C3ADF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExpandableCell-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C68FC4EE3E073A697ABC5066 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ExpandableCell/Pods-ExpandableCell-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AZExpandable/AZExpandable.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AZExpandable.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExpandableCell/Pods-ExpandableCell-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF4A0E380D52A064EC148C88 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExpandableCell/Pods-ExpandableCell-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5797322E1F971A43006DB071 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5797324C1F972856006DB071 /* ExpandableTable.swift in Sources */,
 				579732381F971A43006DB071 /* ViewController.swift in Sources */,
 				579732361F971A43006DB071 /* AppDelegate.swift in Sources */,
-				5797324A1F971A72006DB071 /* ExpandableProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +354,7 @@
 		};
 		579732451F971A43006DB071 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B9DB0A27CB6D3B14B4FA504 /* Pods-ExpandableCell.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -293,7 +363,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.azonov.ExpandableCell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ExpandableCell/ExpandableCell-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,6 +372,7 @@
 		};
 		579732461F971A43006DB071 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A984765D95495A0BB3DFE38 /* Pods-ExpandableCell.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -310,7 +381,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.azonov.ExpandableCell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ExpandableCell/ExpandableCell-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
