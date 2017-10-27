@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		544BBBECEC7CBA6DC12582BA /* Pods_ExpandableCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAEC0521AA1804F5AD4A219 /* Pods_ExpandableCell.framework */; };
 		579732361F971A43006DB071 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579732351F971A43006DB071 /* AppDelegate.swift */; };
-		579732381F971A43006DB071 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579732371F971A43006DB071 /* ViewController.swift */; };
+		579732381F971A43006DB071 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579732371F971A43006DB071 /* DemoViewController.swift */; };
 		5797323B1F971A43006DB071 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579732391F971A43006DB071 /* Main.storyboard */; };
 		5797323D1F971A43006DB071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5797323C1F971A43006DB071 /* Assets.xcassets */; };
 		579732401F971A43006DB071 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5797323E1F971A43006DB071 /* LaunchScreen.storyboard */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		579732321F971A43006DB071 /* ExpandableCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpandableCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		579732351F971A43006DB071 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		579732371F971A43006DB071 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		579732371F971A43006DB071 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		5797323A1F971A43006DB071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5797323C1F971A43006DB071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5797323F1F971A43006DB071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				579732351F971A43006DB071 /* AppDelegate.swift */,
-				579732371F971A43006DB071 /* ViewController.swift */,
+				579732371F971A43006DB071 /* DemoViewController.swift */,
 				579732391F971A43006DB071 /* Main.storyboard */,
 				5797323C1F971A43006DB071 /* Assets.xcassets */,
 				5797323E1F971A43006DB071 /* LaunchScreen.storyboard */,
@@ -218,7 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				579732381F971A43006DB071 /* ViewController.swift in Sources */,
+				579732381F971A43006DB071 /* DemoViewController.swift in Sources */,
 				579732361F971A43006DB071 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -344,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -360,6 +360,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ExpandableCell/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.azonov.ExpandableCell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -378,6 +379,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ExpandableCell/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.azonov.ExpandableCell;
 				PRODUCT_NAME = "$(TARGET_NAME)";

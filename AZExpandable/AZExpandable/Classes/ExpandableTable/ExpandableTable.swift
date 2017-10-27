@@ -9,43 +9,6 @@
 import Foundation
 
 public typealias TableInfoProvider = UITableViewDelegate & UITableViewDataSource
-public typealias CellClosure = ((IndexPath) -> (UITableViewCell))
-
-public struct ExpandedCellInfo: Equatable {
-    
-    public enum CellType {
-        case datePicker
-        case custom(CellClosure)
-    }
-    
-    public var indexPath: IndexPath
-    public var cellType: CellType
-    
-    
-    public init(for indexPath: IndexPath, cellType: CellType) {
-        self.indexPath = indexPath
-        self.cellType = cellType
-    }
-    
-    public static func ==(lhs: ExpandedCellInfo, rhs: ExpandedCellInfo) -> Bool {
-        return lhs.indexPath == rhs.indexPath
-    }
-    
-    func isHigherInSameSection(than hint: ExpandedCellInfo) -> Bool {
-        return hint.indexPath.section == indexPath.section
-            && hint.indexPath.row > indexPath.row
-    }
-    
-    func computedIndexPath(from indexPath: IndexPath) -> IndexPath {
-        var computedIndexPath = indexPath
-        if indexPath.section == self.indexPath.section
-            && indexPath.row > self.indexPath.row
-        {
-            computedIndexPath.decrementRow()
-        }
-        return computedIndexPath
-    }
-}
 
 public class ExpandableTable: NSObject {
     
@@ -86,7 +49,6 @@ public class ExpandableTable: NSObject {
 
 extension ExpandableTable: UITableViewDataSource {
     
-    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let rows = infoProvider.tableView(tableView ,numberOfRowsInSection: section)
         guard let expandedCell = expandedCell else {
@@ -101,8 +63,15 @@ extension ExpandableTable: UITableViewDataSource {
             case .custom(let cellClosure):
                 return cellClosure(indexPath)
                 
-            default:
-                return UITableViewCell()
+            case .datePicker(let setupClosure):
+                let cell = DatePickerCell()
+                setupClosure?(cell.datePicker)
+                return cell
+                
+            case .picker(let setupClosure):
+                let cell = PickerCell()
+                setupClosure(cell.picker)
+                return cell
             }
         }
         let computedIndexPath = expandedCell?.computedIndexPath(from: indexPath) ?? indexPath
@@ -126,16 +95,5 @@ extension ExpandableTable: UITableViewDelegate {
             let computedIndexPath = expandedCell?.computedIndexPath(from: indexPath) ?? indexPath
             infoProvider.tableView?(tableView, didSelectRowAt: computedIndexPath)
         }
-    }
-}
-
-extension IndexPath {
-    
-    fileprivate mutating func incrementRow() {
-        row += 1
-    }
-    
-    fileprivate mutating func decrementRow() {
-        row -= 1
     }
 }
