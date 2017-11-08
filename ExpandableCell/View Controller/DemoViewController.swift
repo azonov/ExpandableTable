@@ -23,6 +23,7 @@ class DemoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        CellFactory.registerCells(for: tableView)
         expandableTable = ExpandableTable(with: tableView, infoProvider: self)
     }
 }
@@ -37,10 +38,11 @@ extension DemoViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellModel = tableViewModel.sections[indexPath.section].cells[indexPath.row]
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "staticCell")
-        cell.textLabel?.text = cellModel.title
-        
-        return cell
+        do {
+            return try CellFactory.cell(for: cellModel, in: tableView, indexPath: indexPath)
+        } catch {
+            return UITableViewCell(style: .default, reuseIdentifier: "default")
+        }
     }
 }
 
