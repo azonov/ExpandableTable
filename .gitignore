@@ -37,3 +37,21 @@ playground.xcworkspace
 
 # Carthage
 Carthage/Build
+ExpandableCell.xcworkspace/contents.xcworkspacedata
+Pods/Manifest.lock
+Pods/Target Support Files/AZExpandable/AZExpandable-dummy.m
+Pods/Target Support Files/AZExpandable/AZExpandable-prefix.pch
+Pods/Target Support Files/AZExpandable/AZExpandable-umbrella.h
+Pods/Target Support Files/AZExpandable/AZExpandable.modulemap
+Pods/Target Support Files/AZExpandable/AZExpandable.xcconfig
+Pods/Target Support Files/AZExpandable/Info.plist
+Pods/Target Support Files/Pods-ExpandableCell/Info.plist
+Pods/Target Support Files/Pods-ExpandableCell/Pods-ExpandableCell-acknowledgements.markdown
+Pods/Target Support Files/Pods-ExpandableCell/Pods-ExpandableCell-acknowledgements.plist
+Pods/Target Support Files/Pods-ExpandableCell/Pods-ExpandableCell-dummy.m
+Pods/Target Support Files/Pods-ExpandableCell/Pods-ExpandableCell-frameworks.sh
+Pods/Target Support Files/Pods-ExpandableCell/Pods-ExpandableCell-resources.sh
+Pods/Target Support Files/Pods-ExpandableCell/Pods-ExpandableCell-umbrella.h
+Pods/Target Support Files/Pods-ExpandableCell/Pods-ExpandableCell.debug.xcconfig
+Pods/Target Support Files/Pods-ExpandableCell/Pods-ExpandableCell.modulemap
+Pods/Target Support Files/Pods-ExpandableCell/Pods-ExpandableCell.release.xcconfig

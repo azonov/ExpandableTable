@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DemoViewController.swift
 //  ExpandableCell
 //
 //  Created by Andrey Zonov on 18/10/2017.
@@ -17,28 +17,29 @@ class DemoViewController: UIViewController {
     // MARK: Private properties
     private var expandableTable: ExpandableTable!
     private var expandedCell: ExpandedCellInfo?
-    
+    private var tableViewModel = TableViewModelFactory.staticExpandableTable
     
     // MARK: Lifecycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         expandableTable = ExpandableTable(with: tableView, infoProvider: self)
     }
-    
 }
 
 // MARK: - UITableViewDataSource
 extension DemoViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        return tableViewModel.sections[section].cells.count
     }
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "s")
-        cell.textLabel?.text = "\(indexPath.row)"
+        let cellModel = tableViewModel.sections[indexPath.section].cells[indexPath.row]
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "staticCell")
+        cell.textLabel?.text = cellModel.title
+        
         return cell
     }
 }
