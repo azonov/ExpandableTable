@@ -18,6 +18,7 @@ class DemoViewController: UIViewController {
     private var expandableTable: ExpandableTable!
     private var expandedCell: ExpandedCellInfo?
     private var tableViewModel = TableViewModelFactory.staticExpandableTable
+    private var pickerController: PickerItemsController?
     
     // MARK: Lifecycle
     override func viewDidLoad() {
@@ -25,6 +26,16 @@ class DemoViewController: UIViewController {
         
         CellFactory.registerCells(for: tableView)
         expandableTable = ExpandableTable(with: tableView, infoProvider: self)
+        // DataSource and Delegate for PickerView, closure is about value changing
+        pickerController = PickerItemsController { title in
+            if let indexPath = self.expandedCell?.indexPath {
+                var viewModel = self.tableViewModel.cell(for: indexPath)
+                guard viewModel.expandingType == .picker else { return }
+                viewModel.title = title
+                self.tableViewModel.replace(cell: viewModel, at: indexPath)
+                self.tableView.reloadRows(at: [indexPath], with: .automatic)
+            }
+        }
     }
     
     private func toggleItem(at indexPath: IndexPath) {
@@ -45,9 +56,8 @@ class DemoViewController: UIViewController {
             
         case .picker:
             cellType = .picker { picker in
-                //TODO: realize
-//                picker.dataSource = self
-//                picker.delegate = self
+                picker.dataSource = self.pickerController
+                picker.delegate = self.pickerController
             }
             
         case .custom:
