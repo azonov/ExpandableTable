@@ -26,6 +26,43 @@ class DemoViewController: UIViewController {
         CellFactory.registerCells(for: tableView)
         expandableTable = ExpandableTable(with: tableView, infoProvider: self)
     }
+    
+    private func toggleItem(at indexPath: IndexPath) {
+        guard expandedCell?.indexPath != indexPath else {
+            expandableTable.unexpandCell()
+            expandedCell = nil
+            return
+        }
+        let cellViewModel = tableViewModel.sections[indexPath.section].cells[indexPath.row]
+        let cellType: ExpandedCellInfo.CellType
+        switch cellViewModel.expandingType {
+        case .date:
+            cellType = .datePicker { datePicker in
+                datePicker.minimumDate = Date()
+                //TODO: realize
+//                datePicker.addTarget(self, action: #selector(didChangeValue), for: .valueChanged)
+            }
+            
+        case .picker:
+            cellType = .picker { picker in
+                //TODO: realize
+//                picker.dataSource = self
+//                picker.delegate = self
+            }
+            
+        case .custom:
+            cellType = .custom { [weak self] indexPath -> (UITableViewCell) in
+                let centeredCell = self?.tableView.dequeueReusableCell(withIdentifier: "CenteredLabelCell",
+                                                                       for: indexPath) as! CenteredLabelCell
+                centeredCell.configure(with: "Hint Inside your custom cell")
+                centeredCell.backgroundColor = .lightGray
+                return centeredCell
+            }
+        }
+        let cell = ExpandedCellInfo(for: indexPath, cellType: cellType)
+        expandedCell = cell
+        expandableTable.expandCell(cell)
+    }
 }
 
 // MARK: - UITableViewDataSource
@@ -39,8 +76,11 @@ extension DemoViewController: UITableViewDataSource {
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellModel = tableViewModel.sections[indexPath.section].cells[indexPath.row]
         do {
-            return try CellFactory.cell(for: cellModel, in: tableView, indexPath: indexPath)
+            return try CellFactory.cell(for: cellModel, in: tableView, indexPath: indexPath) { [weak self] in
+                self?.toggleItem(at: indexPath)
+            }
         } catch {
+            assertionFailure("handle \(error)")
             return UITableViewCell(style: .default, reuseIdentifier: "default")
         }
     }
@@ -50,20 +90,6 @@ extension DemoViewController: UITableViewDataSource {
 extension DemoViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard expandedCell?.indexPath != indexPath else {
-            expandableTable.unexpandCell()
-            expandedCell = nil
-            return
-        }
-        let cellClosure: CellClosure = { (IndexPath) -> (UITableViewCell) in
-            let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "q")
-            cell.textLabel?.text = "expanded"
-            cell.detailTextLabel?.text = "\(indexPath.row)"
-            return cell
-        }
-        //        let cell = ExpandedCellInfo(for: indexPath, cellType: .custom(cellClosure))
-        let cell = ExpandedCellInfo(for: indexPath, cellType: .datePicker(nil))
-        expandedCell = cell
-        expandableTable.expandCell(cell)
+        toggleItem(at: indexPath)
     }
 }

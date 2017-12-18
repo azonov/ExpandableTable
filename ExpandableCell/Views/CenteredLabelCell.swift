@@ -13,6 +13,12 @@ class CenteredLabelCell: UITableViewCell {
     // MARK: Private Outlets
     @IBOutlet private var label: UILabel!
     
+    // MARK: Lifecycle
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        selectionStyle = .none
+    }
+    
     // MARK: Public
     func configure(with title: String) {
         label.text = title

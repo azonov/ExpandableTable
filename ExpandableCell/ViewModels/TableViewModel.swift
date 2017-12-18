@@ -20,7 +20,7 @@ struct TableViewModel {
         
         struct Cell {
             var title: String
-            var expandingType: ExpandingType?
+            var expandingType: ExpandingType
         }
         
         var cells: [Cell]

@@ -3,24 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		144C9CAB6F199E91BE56417F350DAE6D /* ExpandableCellInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90102CE641211AE8FAFEA50811BF6F66 /* ExpandableCellInfo.swift */; };
-		1EB690F3B32E6E3CC991A7D1C3DE3A33 /* ExpandableProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = F491F6275BF23D4400FC1EEC936B3C78 /* ExpandableProxy.m */; };
-		44597DC8427E2076A85CC20070F5AA17 /* ExpandableTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7937F2E677FCBAA8581FC893188F08 /* ExpandableTable.swift */; };
+		149DC8BC73BB2A868FD9C7862842ECA7 /* ExpandableProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = F491F6275BF23D4400FC1EEC936B3C78 /* ExpandableProxy.m */; };
+		1CE6EAE37B8124F12506D15A9F433939 /* AZExpandable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58B5EC73E13CA8CB5EF88FC77EB9EC8C /* AZExpandable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309318C4ACF5D963ACF7F382E51A6B32 /* IndexPath+SyntaxSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89816DC2EF629C3C982479FC11228BC6 /* IndexPath+SyntaxSugar.swift */; };
 		49554C226A5EC4B31022BF9798D10986 /* Pods-ExpandableCell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B488DD9A34CDB6CF921080F6BA41C9D6 /* Pods-ExpandableCell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		575987291FA39C4B00239B5E /* PickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575987271FA39BE400239B5E /* PickerCell.swift */; };
-		5C4D80F28655AA00E9CE1693C0748738 /* AZExpandable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7E90398D229E440DAA28D9FD399EEA /* AZExpandable-dummy.m */; };
+		522E792B9A9E13A12A66F19EFD2845B4 /* ExpandableTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EC7F6D7AAAE1B28967BD3FE66C2306 /* ExpandableTable.swift */; };
 		64EBF8CE6FCEB85D24F441740609A64E /* Pods-ExpandableCell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC05220C5CCE78FD3F64C9190710485 /* Pods-ExpandableCell-dummy.m */; };
-		69849F212B66EC0C8B5045D88C0BCB1F /* IndexPath+SyntaxSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACE334D4DA6E93FB095805D0D64158A /* IndexPath+SyntaxSugar.swift */; };
-		704672A4C01D5772068AA3C0C60B5939 /* DatePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B9F4A47F54B019A6878791E68DAD06 /* DatePickerCell.swift */; };
-		8C52DA845FC8D904CE721A2687AB9351 /* AZExpandable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58B5EC73E13CA8CB5EF88FC77EB9EC8C /* AZExpandable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F9D6F3132F3794354606BFC7543B177 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		99F51A23BE4387CFCD0D18E425ACB13C /* ExpandableProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 31232B78B6B876916A8D76E3DFE67400 /* ExpandableProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A70FA87470A207BDB5180944B1E1991E /* AZExpandable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7E90398D229E440DAA28D9FD399EEA /* AZExpandable-dummy.m */; };
 		A7614E42E31CD4A6F88159F9E779D473 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		B0603FBD17A7C834B1577B4C5BB5C44A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		CB5C703B97C94C761A9B73B3F0FEB9B7 /* ExpandableCell-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 6096F63CB2CFA3D798158A494B630A7F /* ExpandableCell-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D870B5192B9094CE191BB55D7E5A13F5 /* ExpandableProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 31232B78B6B876916A8D76E3DFE67400 /* ExpandableProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE43E731EB2E106A31E49EA9102C8CEF /* DatePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2C96565D1F5678521B43A3D4910D4D /* DatePickerCell.swift */; };
+		BA2A508CC217B30403088705DF1933A2 /* PickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A1C51E811A677AF0A0D79AA2D45EA1 /* PickerCell.swift */; };
+		DFBF10EAA57700EE20D7E3B4FE9BDA35 /* ExpandableCell-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 6096F63CB2CFA3D798158A494B630A7F /* ExpandableCell-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF598C0B85045D8962FDE0A752914CFF /* ExpandableCellInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B81D4557636BF24D7CA44885F3D639 /* ExpandableCellInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +28,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E0065AE40EAD0D9CACE91398FCAA8EC3;
+			remoteGlobalIDString = 5C133AED72F04C8ADA4E7978325CF092;
 			remoteInfo = AZExpandable;
 		};
 /* End PBXContainerItemProxy section */
@@ -36,28 +36,28 @@
 /* Begin PBXFileReference section */
 		0030D295CF91A6A0A8D66F3EC9976870 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0830816E48893DC25E62F752EC943001 /* Pods-ExpandableCell-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ExpandableCell-resources.sh"; sourceTree = "<group>"; };
-		104D7B5D026E3056ECD59B44F0EF2F12 /* Pods_ExpandableCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpandableCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		12D14F6FDCB4A40F061B248C994AF98B /* AZExpandable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AZExpandable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1381906D63C122C2CFDE69F96FF59E0B /* AZExpandable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AZExpandable.modulemap; sourceTree = "<group>"; };
+		104D7B5D026E3056ECD59B44F0EF2F12 /* Pods_ExpandableCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ExpandableCell.framework; path = "Pods-ExpandableCell.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12D14F6FDCB4A40F061B248C994AF98B /* AZExpandable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AZExpandable.framework; path = AZExpandable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1381906D63C122C2CFDE69F96FF59E0B /* AZExpandable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AZExpandable.modulemap; sourceTree = "<group>"; };
 		1DC05220C5CCE78FD3F64C9190710485 /* Pods-ExpandableCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ExpandableCell-dummy.m"; sourceTree = "<group>"; };
 		31232B78B6B876916A8D76E3DFE67400 /* ExpandableProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ExpandableProxy.h; sourceTree = "<group>"; };
-		4B7937F2E677FCBAA8581FC893188F08 /* ExpandableTable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExpandableTable.swift; sourceTree = "<group>"; };
+		3F2C96565D1F5678521B43A3D4910D4D /* DatePickerCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DatePickerCell.swift; sourceTree = "<group>"; };
+		42EC7F6D7AAAE1B28967BD3FE66C2306 /* ExpandableTable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExpandableTable.swift; sourceTree = "<group>"; };
+		47A1C51E811A677AF0A0D79AA2D45EA1 /* PickerCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerCell.swift; sourceTree = "<group>"; };
 		51DD6A68E55D5FAF94B034D07F3CD3B6 /* AZExpandable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AZExpandable-prefix.pch"; sourceTree = "<group>"; };
-		575987271FA39BE400239B5E /* PickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerCell.swift; sourceTree = "<group>"; };
 		58B5EC73E13CA8CB5EF88FC77EB9EC8C /* AZExpandable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AZExpandable-umbrella.h"; sourceTree = "<group>"; };
 		6096F63CB2CFA3D798158A494B630A7F /* ExpandableCell-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ExpandableCell-Bridging-Header.h"; path = "AZExpandable/Classes/ExpandableCell-Bridging-Header.h"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6860F24B3681C3B656DAC1191AEB3578 /* Pods-ExpandableCell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ExpandableCell.modulemap"; sourceTree = "<group>"; };
+		6860F24B3681C3B656DAC1191AEB3578 /* Pods-ExpandableCell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ExpandableCell.modulemap"; sourceTree = "<group>"; };
 		68892AF4E437FB72CBD9D3DA4F245F28 /* Pods-ExpandableCell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExpandableCell.debug.xcconfig"; sourceTree = "<group>"; };
 		76F2530A9517E1EAAAE8258111967FFA /* Pods-ExpandableCell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExpandableCell.release.xcconfig"; sourceTree = "<group>"; };
+		89816DC2EF629C3C982479FC11228BC6 /* IndexPath+SyntaxSugar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "IndexPath+SyntaxSugar.swift"; sourceTree = "<group>"; };
 		8CE7CD2B54C9336884FE986B440DA981 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		90102CE641211AE8FAFEA50811BF6F66 /* ExpandableCellInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExpandableCellInfo.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B7E90398D229E440DAA28D9FD399EEA /* AZExpandable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AZExpandable-dummy.m"; sourceTree = "<group>"; };
 		A76E4C3616BE786B2C17E39F61305A4E /* AZExpandable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AZExpandable.xcconfig; sourceTree = "<group>"; };
-		AACE334D4DA6E93FB095805D0D64158A /* IndexPath+SyntaxSugar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "IndexPath+SyntaxSugar.swift"; sourceTree = "<group>"; };
 		B488DD9A34CDB6CF921080F6BA41C9D6 /* Pods-ExpandableCell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ExpandableCell-umbrella.h"; sourceTree = "<group>"; };
-		B7B9F4A47F54B019A6878791E68DAD06 /* DatePickerCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DatePickerCell.swift; sourceTree = "<group>"; };
+		C3B81D4557636BF24D7CA44885F3D639 /* ExpandableCellInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExpandableCellInfo.swift; sourceTree = "<group>"; };
 		C5BF08C512C75912327CEAB0116CE927 /* Pods-ExpandableCell-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExpandableCell-acknowledgements.plist"; sourceTree = "<group>"; };
 		D1AD95C5BB71B967DFBA06379EA6B4A5 /* Pods-ExpandableCell-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ExpandableCell-frameworks.sh"; sourceTree = "<group>"; };
 		DFF37C89F9B773B61D2DACB0CF260E18 /* Pods-ExpandableCell-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ExpandableCell-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -65,6 +65,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		26D7EA8C4A7080C073234492540DD57F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F9D6F3132F3794354606BFC7543B177 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		28536039B7E6B46051EBD9C20CC6E7BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,26 +81,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC3CFDBD8F2568D21FCA177B074AA17F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B0603FBD17A7C834B1577B4C5BB5C44A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B8D518075759E25F5611FFD892EE60F /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				B7B9F4A47F54B019A6878791E68DAD06 /* DatePickerCell.swift */,
-				575987271FA39BE400239B5E /* PickerCell.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
 		1019D583CED598CFFB408081DFF2D233 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +124,18 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		4DDBD06B9F70EA06CCBE8571A4C9CDEC /* ExpandableTable */ = {
+			isa = PBXGroup;
+			children = (
+				C3B81D4557636BF24D7CA44885F3D639 /* ExpandableCellInfo.swift */,
+				42EC7F6D7AAAE1B28967BD3FE66C2306 /* ExpandableTable.swift */,
+				89816DC2EF629C3C982479FC11228BC6 /* IndexPath+SyntaxSugar.swift */,
+				71395C90A565E9B00471FCB169884BB5 /* Cells */,
+			);
+			name = ExpandableTable;
+			path = AZExpandable/Classes/ExpandableTable;
+			sourceTree = "<group>";
+		};
 		620CB894115D2337F5A43847E1C44F65 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +143,16 @@
 				104D7B5D026E3056ECD59B44F0EF2F12 /* Pods_ExpandableCell.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		71395C90A565E9B00471FCB169884BB5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3F2C96565D1F5678521B43A3D4910D4D /* DatePickerCell.swift */,
+				47A1C51E811A677AF0A0D79AA2D45EA1 /* PickerCell.swift */,
+			);
+			name = Cells;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -151,18 +164,6 @@
 				620CB894115D2337F5A43847E1C44F65 /* Products */,
 				351DA9E455D59064B7495B06600C9A20 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		B1933E5F5B9AA71E80D9BFFA6362FD2D /* ExpandableTable */ = {
-			isa = PBXGroup;
-			children = (
-				90102CE641211AE8FAFEA50811BF6F66 /* ExpandableCellInfo.swift */,
-				4B7937F2E677FCBAA8581FC893188F08 /* ExpandableTable.swift */,
-				AACE334D4DA6E93FB095805D0D64158A /* IndexPath+SyntaxSugar.swift */,
-				0B8D518075759E25F5611FFD892EE60F /* Cells */,
-			);
-			name = ExpandableTable;
-			path = AZExpandable/Classes/ExpandableTable;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -203,7 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				6096F63CB2CFA3D798158A494B630A7F /* ExpandableCell-Bridging-Header.h */,
-				B1933E5F5B9AA71E80D9BFFA6362FD2D /* ExpandableTable */,
+				4DDBD06B9F70EA06CCBE8571A4C9CDEC /* ExpandableTable */,
 				E0BE34F0782C4ECA04CA71C80587FBD1 /* Proxy */,
 				1019D583CED598CFFB408081DFF2D233 /* Support Files */,
 			);
@@ -214,13 +215,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3C0D9408F4F814863EA4ABB872D9B0DB /* Headers */ = {
+		685D4B3DC232F5670BC70CD9E599D6E8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C52DA845FC8D904CE721A2687AB9351 /* AZExpandable-umbrella.h in Headers */,
-				CB5C703B97C94C761A9B73B3F0FEB9B7 /* ExpandableCell-Bridging-Header.h in Headers */,
-				D870B5192B9094CE191BB55D7E5A13F5 /* ExpandableProxy.h in Headers */,
+				1CE6EAE37B8124F12506D15A9F433939 /* AZExpandable-umbrella.h in Headers */,
+				DFBF10EAA57700EE20D7E3B4FE9BDA35 /* ExpandableCell-Bridging-Header.h in Headers */,
+				99F51A23BE4387CFCD0D18E425ACB13C /* ExpandableProxy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,13 +236,13 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		E0065AE40EAD0D9CACE91398FCAA8EC3 /* AZExpandable */ = {
+		5C133AED72F04C8ADA4E7978325CF092 /* AZExpandable */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 121A72122EADEE1EACCE8966F7ED39AA /* Build configuration list for PBXNativeTarget "AZExpandable" */;
+			buildConfigurationList = E242C215912BDE9BDC9D819594269697 /* Build configuration list for PBXNativeTarget "AZExpandable" */;
 			buildPhases = (
-				E2997BCAE117E3C0C142CE8014538F1A /* Sources */,
-				CC3CFDBD8F2568D21FCA177B074AA17F /* Frameworks */,
-				3C0D9408F4F814863EA4ABB872D9B0DB /* Headers */,
+				7BD2E17F62BFBD9989F2CF11C1B6B1C3 /* Sources */,
+				26D7EA8C4A7080C073234492540DD57F /* Frameworks */,
+				685D4B3DC232F5670BC70CD9E599D6E8 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -278,11 +279,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					F8834CC689FB29FC0ADC78AE6681807F = {
-						LastSwiftMigration = 0900;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -296,32 +292,32 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E0065AE40EAD0D9CACE91398FCAA8EC3 /* AZExpandable */,
+				5C133AED72F04C8ADA4E7978325CF092 /* AZExpandable */,
 				F8834CC689FB29FC0ADC78AE6681807F /* Pods-ExpandableCell */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7BD2E17F62BFBD9989F2CF11C1B6B1C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A70FA87470A207BDB5180944B1E1991E /* AZExpandable-dummy.m in Sources */,
+				AE43E731EB2E106A31E49EA9102C8CEF /* DatePickerCell.swift in Sources */,
+				FF598C0B85045D8962FDE0A752914CFF /* ExpandableCellInfo.swift in Sources */,
+				149DC8BC73BB2A868FD9C7862842ECA7 /* ExpandableProxy.m in Sources */,
+				522E792B9A9E13A12A66F19EFD2845B4 /* ExpandableTable.swift in Sources */,
+				309318C4ACF5D963ACF7F382E51A6B32 /* IndexPath+SyntaxSugar.swift in Sources */,
+				BA2A508CC217B30403088705DF1933A2 /* PickerCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7F595D261F3DC2BE3787E6AB245F842E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				64EBF8CE6FCEB85D24F441740609A64E /* Pods-ExpandableCell-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E2997BCAE117E3C0C142CE8014538F1A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5C4D80F28655AA00E9CE1693C0748738 /* AZExpandable-dummy.m in Sources */,
-				704672A4C01D5772068AA3C0C60B5939 /* DatePickerCell.swift in Sources */,
-				144C9CAB6F199E91BE56417F350DAE6D /* ExpandableCellInfo.swift in Sources */,
-				1EB690F3B32E6E3CC991A7D1C3DE3A33 /* ExpandableProxy.m in Sources */,
-				44597DC8427E2076A85CC20070F5AA17 /* ExpandableTable.swift in Sources */,
-				575987291FA39C4B00239B5E /* PickerCell.swift in Sources */,
-				69849F212B66EC0C8B5045D88C0BCB1F /* IndexPath+SyntaxSugar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +327,7 @@
 		A85F41D06B758E5925E3E542586408E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AZExpandable;
-			target = E0065AE40EAD0D9CACE91398FCAA8EC3 /* AZExpandable */;
+			target = 5C133AED72F04C8ADA4E7978325CF092 /* AZExpandable */;
 			targetProxy = A50F982D654F745FD6B3ACCF4CD10E18 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -341,7 +337,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 68892AF4E437FB72CBD9D3DA4F245F28 /* Pods-ExpandableCell.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -366,44 +361,11 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		538D69415A2F981F0A4AE4A197AB980F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A76E4C3616BE786B2C17E39F61305A4E /* AZExpandable.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AZExpandable/AZExpandable-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AZExpandable/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AZExpandable/AZExpandable.modulemap";
-				PRODUCT_NAME = AZExpandable;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		6F9224530522DD3C735EC96CF142642E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -464,7 +426,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 76F2530A9517E1EAAAE8258111967FFA /* Pods-ExpandableCell.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -488,7 +449,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -556,7 +516,39 @@
 			};
 			name = Debug;
 		};
-		C5B1B43AAAEE7ACD735C0EFB2D3B5A11 /* Debug */ = {
+		EAA46E03DD109DAD729606E0F1E4B0DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A76E4C3616BE786B2C17E39F61305A4E /* AZExpandable.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AZExpandable/AZExpandable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AZExpandable/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AZExpandable/AZExpandable.modulemap";
+				PRODUCT_NAME = AZExpandable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F1C5AF47E9F491FB2BE0D6F09138A64E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A76E4C3616BE786B2C17E39F61305A4E /* AZExpandable.xcconfig */;
 			buildSettings = {
@@ -590,15 +582,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		121A72122EADEE1EACCE8966F7ED39AA /* Build configuration list for PBXNativeTarget "AZExpandable" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C5B1B43AAAEE7ACD735C0EFB2D3B5A11 /* Debug */,
-				538D69415A2F981F0A4AE4A197AB980F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -613,6 +596,15 @@
 			buildConfigurations = (
 				09AA96258FB75A6339A1631FF722C29D /* Debug */,
 				9FC55E25936896AC5CF8914F30BDDE1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E242C215912BDE9BDC9D819594269697 /* Build configuration list for PBXNativeTarget "AZExpandable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1C5AF47E9F491FB2BE0D6F09138A64E /* Debug */,
+				EAA46E03DD109DAD729606E0F1E4B0DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
