@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary          = 'AZExpandable is a lightweight proxy for UITableView to expand cells.'
 
   s.platform = :ios
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '8.0'
 
   s.homepage         = 'https://github.com/azonov/expandableTable.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
