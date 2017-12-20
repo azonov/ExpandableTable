@@ -1,5 +1,5 @@
 use_frameworks!
 
 target 'ExpandableCell' do
-	pod 'AZExpandable', :path => '../'
+	pod 'AZExpandable', :git => 'http://github.com/azonov/expandableTable.git'
 end
