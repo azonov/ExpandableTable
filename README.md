@@ -1,3 +1,5 @@
+![AZExpandable](https://raw.githubusercontent.com/azonov/expandableTable/master/logo_long.png)
+
 **AZExpandable** is a lightweight proxy for UITableView to expand cells. It incapsulates native NSProxy mechanism inside and gives swifty api outside.
 <br />
 <br />General advantages: **No Subclassing**, **No Swizzling**, **Easy to intagrate**
