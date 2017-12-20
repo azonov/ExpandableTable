@@ -12,11 +12,13 @@ public typealias TableInfoProvider = UITableViewDelegate & UITableViewDataSource
 
 public class ExpandableTable: NSObject {
     
+    // MARK: Private Properties
     private var proxy: ExpandableProxy?
     private var expandedCell: ExpandedCellInfo?
     private weak var tableView: UITableView!
     private weak var infoProvider: TableInfoProvider!
     
+    // MARK: Lifecycle
     public init(with tableView: UITableView, infoProvider: TableInfoProvider) {
         self.tableView = tableView
         self.infoProvider = infoProvider
@@ -26,6 +28,7 @@ public class ExpandableTable: NSObject {
         tableView.delegate = proxy
     }
     
+    // MARK: Public
     public func expandCell(_ cell: ExpandedCellInfo) {
         var resultCell = cell
         resultCell.indexPath.incrementRow()
@@ -47,6 +50,7 @@ public class ExpandableTable: NSObject {
     }
 }
 
+// MARK: - UITableViewDataSource
 extension ExpandableTable: UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -80,6 +84,7 @@ extension ExpandableTable: UITableViewDataSource {
 
 }
 
+// MARK: - UITableViewDelegate
 extension ExpandableTable: UITableViewDelegate {
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

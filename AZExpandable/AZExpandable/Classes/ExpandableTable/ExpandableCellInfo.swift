@@ -13,21 +13,24 @@ public typealias PickerSetupClosure = ((UIPickerView) -> ())
 
 public struct ExpandedCellInfo: Equatable {
     
+    // MARK: Private Data Structures
     public enum CellType {
         case datePicker(DatePickerSetupClosure?)
         case picker(PickerSetupClosure)
         case custom(CellClosure)
     }
     
+    // MARK: Public Properties
     public var indexPath: IndexPath
     public var cellType: CellType
     
-    
+    // MARK: Lifecycle
     public init(for indexPath: IndexPath, cellType: CellType) {
         self.indexPath = indexPath
         self.cellType = cellType
     }
     
+    // MARK: Public
     public static func ==(lhs: ExpandedCellInfo, rhs: ExpandedCellInfo) -> Bool {
         return lhs.indexPath == rhs.indexPath
     }

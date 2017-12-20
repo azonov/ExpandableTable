@@ -9,8 +9,10 @@ import UIKit
 
 class DatePickerCell: UITableViewCell {
     
+    // MARK: Public Properties
     weak var datePicker: UIDatePicker!
     
+    // MARK: Lifecycle
     init() {
         let datePicker = UIDatePicker(frame: .zero)
         self.datePicker = datePicker

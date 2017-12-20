@@ -9,8 +9,10 @@ import UIKit
 
 class PickerCell: UITableViewCell {
     
+    // MARK: Public Properties
     weak var picker: UIPickerView!
     
+    // MARK: Lifecycle
     init() {
         let picker = UIPickerView(frame: .zero)
         self.picker = picker

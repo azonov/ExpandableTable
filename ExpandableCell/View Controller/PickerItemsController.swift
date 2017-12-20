@@ -33,4 +33,9 @@ class PickerItemsController: NSObject, UIPickerViewDelegate, UIPickerViewDataSou
             updateClosure(title)
         }
     }
+    
+    @objc func datePickerDidChangeValue(_ datePicker: UIDatePicker) {
+        let title = DateFormatter.localizedString(from: datePicker.date, dateStyle: .medium, timeStyle: .medium)
+        updateClosure(title)
+    }
 }

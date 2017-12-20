@@ -1,5 +1,5 @@
 //
-//  DemoViewController.swift
+//  ComplexDemoViewController.swift
 //  ExpandableCell
 //
 //  Created by Andrey Zonov on 18/10/2017.
@@ -9,12 +9,12 @@
 import UIKit
 import AZExpandable
 
-class DemoViewController: UIViewController {
+class ComplexDemoViewController: UIViewController {
     
     // MARK: IBOutlet's
     @IBOutlet private weak var tableView: UITableView!
     
-    // MARK: Private properties
+    // MARK: Private Properties
     private var expandableTable: ExpandableTable!
     private var expandedCell: ExpandedCellInfo?
     private var tableViewModel = TableViewModelFactory.staticExpandableTable
@@ -30,7 +30,6 @@ class DemoViewController: UIViewController {
         pickerController = PickerItemsController { title in
             if let indexPath = self.expandedCell?.indexPath {
                 var viewModel = self.tableViewModel.cell(for: indexPath)
-                guard viewModel.expandingType == .picker else { return }
                 viewModel.title = title
                 self.tableViewModel.replace(cell: viewModel, at: indexPath)
                 self.tableView.reloadRows(at: [indexPath], with: .automatic)
@@ -50,8 +49,9 @@ class DemoViewController: UIViewController {
         case .date:
             cellType = .datePicker { datePicker in
                 datePicker.minimumDate = Date()
-                //TODO: realize
-//                datePicker.addTarget(self, action: #selector(didChangeValue), for: .valueChanged)
+                datePicker.addTarget(self.pickerController,
+                                     action: #selector(PickerItemsController.datePickerDidChangeValue),
+                                     for: .valueChanged)
             }
             
         case .picker:
@@ -76,7 +76,16 @@ class DemoViewController: UIViewController {
 }
 
 // MARK: - UITableViewDataSource
-extension DemoViewController: UITableViewDataSource {
+extension ComplexDemoViewController: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return tableViewModel.sections.count
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let section = tableViewModel.sections[section]
+        return section.title
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableViewModel.sections[section].cells.count
@@ -97,7 +106,7 @@ extension DemoViewController: UITableViewDataSource {
 }
 
 // MARK: - UITableViewDelegate
-extension DemoViewController: UITableViewDelegate {
+extension ComplexDemoViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         toggleItem(at: indexPath)

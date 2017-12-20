@@ -22,7 +22,7 @@ struct TableViewModel {
             var title: String
             var expandingType: ExpandingType
         }
-        
+        let title: String?
         var cells: [Cell]
     }
     
