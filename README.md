@@ -1,8 +1,6 @@
-AZExpandable is a lightweight proxy for UITableView to expand cells. It incapsulates navive NSProxy mechanism inside and gives swifty api outside.
-- Advantages:
-	- **No Subclassing**
-	- **No Swizzling**
-	- **Easy to intagrate**
+**AZExpandable** is a lightweight proxy for UITableView to expand cells. It incapsulates native NSProxy mechanism inside and gives swifty api outside.
+<br />
+<br />General advantages: **No Subclassing**, **No Swizzling**, **Easy to intagrate**
 
 - [Requirements](#requirements)
 - [Communication](#communication)
@@ -56,25 +54,25 @@ $ pod install
 
 
 ```swift
-	private var expandableTable: ExpandableTable!// Expanding Table Proxy
+private var expandableTable: ExpandableTable!// Expanding Table Proxy
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        expandableTable = ExpandableTable(with: tableView, infoProvider: self)// TableInfoProvider = UITableViewDelegate & UITableViewDataSource
-    }
+override func viewDidLoad() {
+    super.viewDidLoad()
+    // infoProvider - UITableViewDelegate & UITableViewDataSource
+    expandableTable = ExpandableTable(with: tableView, infoProvider: self)
+}
 
-    func expandCell(at indexPath: IndexPath) {
-        let cellClosure: CellClosure = { (IndexPath) -> (UITableViewCell) in
-        	//Your custom expanding cell
-            return self.tableView.dequeueReusableCell(withIdentifier: "Identifier", for: indexPath)
-        }
-        expandableTable.expandCell(ExpandedCellInfo(for: indexPath, cellType: .custom(cellClosure)))
+func expandCell(at indexPath: IndexPath) {
+    let cellClosure: CellClosure = { (IndexPath) -> (UITableViewCell) in
+    	//Your custom expanding cell
+        return self.tableView.dequeueReusableCell(withIdentifier: "Identifier", for: indexPath)
     }
+    expandableTable.expandCell(ExpandedCellInfo(for: indexPath, cellType: .custom(cellClosure)))
+}
 
-    func unexpandCell() {
-    	expandableTable.unexpandCell()
-    }
+func unexpandCell() {
+	expandableTable.unexpandCell()
+}
 ```
 
 
