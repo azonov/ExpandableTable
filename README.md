@@ -10,6 +10,10 @@
 - [Usage](#usage)
 - [License](#license)
 
+## Example
+
+![Alt Text](https://media.giphy.com/media/l0HU17JvuEjnkLskg/giphy.gif)
+
 ## Requirements
 
 - iOS 8.0+
