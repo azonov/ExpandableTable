@@ -5,7 +5,7 @@
 //  Created by Andrey Zonov on 20/10/2017.
 //
 
-import Foundation
+import UIKit
 
 public typealias CellClosure = ((IndexPath) -> (UITableViewCell))
 public typealias DatePickerSetupClosure = ((UIDatePicker) -> ())

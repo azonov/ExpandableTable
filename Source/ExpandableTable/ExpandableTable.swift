@@ -39,14 +39,17 @@ public class ExpandableTable: NSObject {
             unexpandCell()
         }
         expandedCell = resultCell
-        
+        tableView.beginUpdates()
         tableView?.insertRows(at: [resultCell.indexPath], with: .middle)
+        tableView.endUpdates()
     }
     
     public func unexpandCell() {
         guard let indexPath = expandedCell?.indexPath else { return }
         expandedCell = nil
+        tableView.beginUpdates()
         tableView?.deleteRows(at: [indexPath], with: .middle)
+        tableView.endUpdates()
     }
 }
 
@@ -81,7 +84,6 @@ extension ExpandableTable: UITableViewDataSource {
         let computedIndexPath = expandedCell?.computedIndexPath(from: indexPath) ?? indexPath
         return infoProvider.tableView(tableView, cellForRowAt: computedIndexPath)
     }
-
 }
 
 // MARK: - UITableViewDelegate
@@ -89,10 +91,10 @@ extension ExpandableTable: UITableViewDelegate {
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         guard indexPath != expandedCell?.indexPath else {
-            return UITableViewAutomaticDimension
+            return UITableView.automaticDimension
         }
         let computedIndexPath = expandedCell?.computedIndexPath(from: indexPath) ?? indexPath
-        return infoProvider.tableView?(tableView, heightForRowAt: computedIndexPath) ?? UITableViewAutomaticDimension
+        return infoProvider.tableView?(tableView, heightForRowAt: computedIndexPath) ?? UITableView.automaticDimension
     }
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

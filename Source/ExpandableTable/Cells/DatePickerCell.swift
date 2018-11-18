@@ -16,34 +16,14 @@ class DatePickerCell: UITableViewCell {
     init() {
         let datePicker = UIDatePicker(frame: .zero)
         self.datePicker = datePicker
-        let name = "datePicker"
-        super.init(style: .default, reuseIdentifier: name)
+        
+        super.init(style: .default, reuseIdentifier: String(describing: type(of: self)))
+        
         addSubview(datePicker)
-        datePicker.translatesAutoresizingMaskIntoConstraints = false
-        
-        let constraintH = NSLayoutConstraint.constraints(
-            withVisualFormat: "H:|-0-[\(name)]-0-|",
-            options: [],
-            metrics: nil,
-            views: [name: datePicker])
-        
-        let constraintW = NSLayoutConstraint.constraints(
-            withVisualFormat: "V:|-0-[\(name)]-0-|",
-            options: [],
-            metrics: nil,
-            views: [name: datePicker])
-
-        addConstraints(constraintH + constraintW)
+        datePicker.makeEdgesEqualToSuperView()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        if frame == datePicker.frame {
-            datePicker.frame = frame
-        }
     }
 }

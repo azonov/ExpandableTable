@@ -19,6 +19,7 @@
 		57FF08091FB2D9BB008C0958 /* CenteredLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FF08081FB2D9BB008C0958 /* CenteredLabelCell.swift */; };
 		57FF080D1FB2DB73008C0958 /* CellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FF080C1FB2DB73008C0958 /* CellFactory.swift */; };
 		FB3A0DBB1FE82D2A00D5C0A6 /* PickerItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3A0DBA1FE82D2A00D5C0A6 /* PickerItemsController.swift */; };
+		FBAA601B219F0E24004CC2FA /* LoadMoreDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAA601A219F0E24004CC2FA /* LoadMoreDemoViewController.swift */; };
 		FBDF2A041FE8FCC600889B28 /* BasicDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDF2A031FE8FCC600889B28 /* BasicDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		8A984765D95495A0BB3DFE38 /* Pods-ExpandableCell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpandableCell.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExpandableCell/Pods-ExpandableCell.release.xcconfig"; sourceTree = "<group>"; };
 		9CAEC0521AA1804F5AD4A219 /* Pods_ExpandableCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpandableCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB3A0DBA1FE82D2A00D5C0A6 /* PickerItemsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerItemsController.swift; sourceTree = "<group>"; };
+		FBAA601A219F0E24004CC2FA /* LoadMoreDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreDemoViewController.swift; sourceTree = "<group>"; };
 		FBDF2A031FE8FCC600889B28 /* BasicDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,7 @@
 			children = (
 				FBDF2A031FE8FCC600889B28 /* BasicDemoViewController.swift */,
 				579732371F971A43006DB071 /* ComplexDemoViewController.swift */,
+				FBAA601A219F0E24004CC2FA /* LoadMoreDemoViewController.swift */,
 				FB3A0DBA1FE82D2A00D5C0A6 /* PickerItemsController.swift */,
 				57FF080C1FB2DB73008C0958 /* CellFactory.swift */,
 			);
@@ -153,7 +156,6 @@
 				5797322F1F971A43006DB071 /* Frameworks */,
 				579732301F971A43006DB071 /* Resources */,
 				C68FC4EE3E073A697ABC5066 /* [CP] Embed Pods Frameworks */,
-				FF4A0E380D52A064EC148C88 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -171,12 +173,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Andrey Zonov";
 				TargetAttributes = {
 					579732311F971A43006DB071 = {
 						CreatedOnToolsVersion = 9.0.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -250,21 +252,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExpandableCell/Pods-ExpandableCell-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FF4A0E380D52A064EC148C88 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExpandableCell/Pods-ExpandableCell-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -278,6 +265,7 @@
 				57FF07FF1FB2CBC2008C0958 /* TableViewModelFactory.swift in Sources */,
 				FB3A0DBB1FE82D2A00D5C0A6 /* PickerItemsController.swift in Sources */,
 				57FF080D1FB2DB73008C0958 /* CellFactory.swift in Sources */,
+				FBAA601B219F0E24004CC2FA /* LoadMoreDemoViewController.swift in Sources */,
 				FBDF2A041FE8FCC600889B28 /* BasicDemoViewController.swift in Sources */,
 				579732361F971A43006DB071 /* AppDelegate.swift in Sources */,
 			);
@@ -319,6 +307,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -326,6 +315,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -376,6 +366,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -383,6 +374,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -426,7 +418,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -444,7 +436,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.azonov.ExpandableCell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
