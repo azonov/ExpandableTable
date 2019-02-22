@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AZExpandable'
-  s.version          = '0.0.1'
+  s.version          = '1.0.0'
   s.summary          = 'AZExpandable is a lightweight proxy for UITableView to expand cells.'
 
   s.platform = :ios
