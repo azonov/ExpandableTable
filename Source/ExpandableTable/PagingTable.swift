@@ -11,6 +11,10 @@ public typealias NextPageClosure = (PagingTable) -> ()
 
 public class PagingTable: NSObject {
     
+    public enum PagingError: Error {
+        case described(string: String)
+    }
+    
     // MARK: Private Properties
     private var proxy: ExpandableProxy?
     private var loadMoreIndexPath: IndexPath?
@@ -43,17 +47,13 @@ public class PagingTable: NSObject {
         let sectionsCount = tableView.numberOfSections
         
         guard sectionsCount > 0 else {
-            throw NSError(domain: "ExpandableTable",
-                          code: 0,
-                          userInfo: ["error" : "numberOfSections > 0"])
+            throw PagingError.described(string: "numberOfSections > 0")
         }
         
         let rowsCount = tableView.numberOfRows(inSection: sectionsCount - 1)
         
         guard rowsCount > 0 else {
-            throw NSError(domain: "ExpandableTable",
-                          code: 0,
-                          userInfo: ["error" : "rowsCount > 0"])
+            throw PagingError.described(string: "rowsCount > 0")
         }
         
         var indexPath = IndexPath(item: rowsCount - 1,
